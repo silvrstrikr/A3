@@ -123,6 +123,30 @@ class FormData // pattern for each data box
 }
 
 function findCars(){
-    localStorage.getItem()
+    var vals = Object.keys(localStorage);
+    var output = "", temp = "";
+    if(document.getElementById("model").value == null || document.getElementById("model").value == ""){
+        for(var i = 0; i < vals.length; i++){
+            temp = vals[i].split(",");
+            output += 
+            `
+                <li><a href=http://www.jdpower.com/cars/${temp[0]}/${temp[1]}/${temp[2]}>${localStorage.getItem(vals[i])}</a></li>
+            `;
+        }
+    }else{
+        for(var i = 0; i < vals.length; i++){
+            
+            temp = vals[i].split(",");
+            if(document.getElementById("model").value == temp[1]){
+                output += 
+                `
+                    <li><a href=http://www.jdpower.com/cars/${temp[0]}/${temp[1]}/${temp[2]}>${localStorage.getItem(vals[i])}</a></li>
+                `;
+            }
+
+        }
+    }
+
+    document.getElementById("list").innerHTML = output;
     return false;
 }
