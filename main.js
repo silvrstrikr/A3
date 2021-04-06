@@ -31,7 +31,7 @@ function DisplayData()
 
     localStorage.setItem(make + "," + model + "," + year, MyOutput);
 
-    MyOutput += `<a href="http://localhost/A3/pages/index.html" class="button">Go Home</button>`;
+    MyOutput += `<a id="goHome2" href="http://localhost/A3/pages/index.html" class="button">Go Home</button>`;
    return MyOutput;
     
 }
@@ -130,7 +130,7 @@ function findCars(){
             temp = vals[i].split(",");
             output += 
             `
-                <li><a href=http://www.jdpower.com/cars/${temp[0]}/${temp[1]}/${temp[2]}>${localStorage.getItem(vals[i])}</a></li>
+                <li name="${i}" id="${i}"><a href=http://www.jdpower.com/cars/${temp[0]}/${temp[1]}/${temp[2]}>${localStorage.getItem(vals[i])}</a></li>
             `;
         }
     }else{
@@ -140,7 +140,7 @@ function findCars(){
             if(document.getElementById("model").value == temp[1]){
                 output += 
                 `
-                    <li><a href=http://www.jdpower.com/cars/${temp[0]}/${temp[1]}/${temp[2]}>${localStorage.getItem(vals[i])}</a></li>
+                    <li ><a name="${i}" id="${i}" href=http://www.jdpower.com/cars/${temp[0]}/${temp[1]}/${temp[2]}>${localStorage.getItem(vals[i])}</a></li>
                 `;
             }
 
