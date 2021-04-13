@@ -31,7 +31,7 @@ function DisplayData()
 
     localStorage.setItem(make + "," + model + "," + year, MyOutput);
 
-    MyOutput += `<a id="goHome2" href="http://localhost/A3/pages/index.html" class="button">Go Home</button>`;
+    MyOutput += `<a id="goHome2" href="/index.html" class="button">Go Home</button>`;
    return MyOutput;
     
 }
