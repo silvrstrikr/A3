@@ -1,0 +1,74 @@
+body
+{
+    background-image: url("..\\images\\wood.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+} 
+
+h1
+{
+    text-decoration: underline; 
+}
+
+#errors 
+{
+    color: white;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: left;
+    padding: 10px;
+    margin: 0; 
+    border-radius: 10px;
+} 
+
+form, .formData
+{
+    width: 380px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px #2c2c2c;
+    padding: 30px;
+    margin: 50px auto;
+    color: white;
+    background-color: #0781b2;
+    border-radius: 20px;
+}
+
+label
+{
+    width: 170px;
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+}
+
+input
+{
+    width: 170px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+select
+{
+    width: 175px;
+    height: 35px;
+    margin-bottom: 0px;
+}
+
+input[type="submit"]
+{
+    width: 100%;
+    font-size: 22px;
+    background-color: blue;
+    color: white;
+    border: 1px;
+    margin: 10px;
+    height: 50px;
+    box-shadow: 4px 4px 0px red;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover
+{
+    box-shadow: -4px -4px 0px yellowgreen;
+}

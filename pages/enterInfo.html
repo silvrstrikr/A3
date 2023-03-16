@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <title>Assignment 2</title>
+</head>
+<body> 
+    <div class="formData"> 
+        <h1>My Shop</h1>
+    </div>
+    <form name="myForm" id="myForm" action="" method="POST" onsubmit="return Validate();">
+        <label for="firstName">First Name*</label>
+        <input class="Text" id="firstName" name="firstName" autofocus autocapitalize="words"><br>
+
+        <label for="lastName">Last Name*</label>
+        <input class="Text" id="lastName" autocapitalize="words"><br>
+
+        <label for="address">Address*</label>
+        <input class="Text" id="address"><br/>
+
+        <label for="city">City*</label>    
+        <input class="Text" id="city"><br/>
+
+        <label>Province</label>
+        <select class="Text" id="province" name="province">
+            <option value="Ontario">Ontario</option>
+            <option value="Alberta">Alberta</option>
+            <option value="British Columbia">British Columbia</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="New Brunswick">New Brunswick</option>
+            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+            <option value="Northwest Territories">Northwest Territories</option>
+            <option value="Nova Scotia">Nova Scotia</option>
+            <option value="Nunavut">Nunavut</option>
+            <option value="Prince Edward Island"> Prince Edward Island</option>
+            <option value="Quebec">Quebec</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+            <option value="Yukon">Yukon</option>
+        </select><br/><br/>
+
+        <label for="postcode">Post Code*</label>
+        <input class="postcode" id="postcode" placeholder="XXX-XXX"><br/>
+         
+        <label for="phone">Phone*</label>
+        <input class="Number" id="phone" placeholder="XXX-XXX-XXXX"><br/>
+
+        <label for="email">Email*</label>
+        <input class="Text" id="email"><br/>
+
+        <label for="make">Make*</label>
+        <input class="Text" id="make" autofocus autocapitalize="words"><br>
+
+        <label for="model">Model*</label>
+        <input class="Text" id="model" autofocus autocapitalize="words"><br>
+
+        <label for="year">Year*</label>
+        <input class="Number" id="year" autofocus autocapitalize="words"><br>
+
+        <input id="submit" type="submit" value="Add Car">
+        <a id="goHome" href="../index.html" class="button">Go Home</a>
+        
+    </form>
+    
+    <div class="formData">
+        <p id="NewForm"></p>
+    </div>
+</body>
+</html>
